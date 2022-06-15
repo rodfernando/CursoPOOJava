@@ -8,9 +8,9 @@ public class Computador {
 	
 	void ligar() {
 		if (this.ligado == true) {
-			System.out.println("O computador está ligado!");
+			System.out.println("O computador estÃ¡ ligado!");
 		} else {
-			System.out.println("O computador está desligado!");
+			System.out.println("O computador estÃ¡ desligado!");
 		}
 		System.out.println();
 	}
@@ -19,13 +19,13 @@ public class Computador {
 		if(this.hd > 1000000) {
 			System.out.println("Hd suporta o tamanho acima de 1TB.");
 		} else {
-			System.out.println("Este HD não suporta o tamanho do arquivo.");
+			System.out.println("Este HD nï¿½o suporta o tamanho do arquivo.");
 		}
 	}
 	
 	void status() {
 		System.out.println("***************************");
-		System.out.println("Especificações do sistema:");
+		System.out.println("Especificaï¿½ï¿½es do sistema:");
 		System.out.println("RAM: " +this.ram + "GB");
 		System.out.println("Monitor: " +this.monitor);
 		System.out.println("Processador: " +this.Processador);

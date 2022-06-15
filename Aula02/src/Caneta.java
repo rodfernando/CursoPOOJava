@@ -12,12 +12,12 @@ public class Caneta {
 		System.out.println("Uma caneta " + this.cor);
 		System.out.println("Ponta: " + this.ponta);
 		System.out.println("Carga: " + this.carga);
-		System.out.println("Está tampada?  " + this.tampada);
+		System.out.println("Esta tampada?  " + this.tampada);
 	}
 
 	public void rabiscar() {
 		if (this.tampada == true) {
-			System.err.println("Erro! Não posso rabiscar");
+			System.err.println("Erro! NÃ£o posso rabiscar");
 		} else {
 			System.out.println("Estou rabiscando");
 		}

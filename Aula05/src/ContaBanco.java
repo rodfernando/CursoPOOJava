@@ -7,13 +7,14 @@ public class ContaBanco {
 	private double saldo;
 	private boolean status;
 
+	//Construtor
 	public ContaBanco(double saldo, boolean status) {
 		this.saldo = saldo;
 		this.status = status;
 	}
 
-	// Métodos
-	public void abrirConta(String t) { //parâmetro usado no método tipo
+	// Mï¿½todos
+	public void abrirConta(String t) { //parï¿½metro usado no mï¿½todo tipo
 		setTipo(t); // configurar o tipo de conta.
 		setStatus(true); // = status == true
 		if (t == "CC" || t == "cc") {
@@ -27,7 +28,7 @@ public class ContaBanco {
 		if (saldo > 0) {
 			System.err.println("Conta com dinheiro.");
 		} else if (saldo < 0) {
-			System.err.println("Conta em débito.");
+			System.err.println("Conta em dï¿½bito.");
 		} else {
 			setStatus(false);
 		}
@@ -39,42 +40,42 @@ public class ContaBanco {
 			setSaldo(getSaldo() + valor); // pegue o saldo, some o valor que foi depositado e atualize o saldo.
 			// saldo += valor;
 		} else {
-			System.err.println("Impossível depositar dinheiro com conta fechada");
+			System.err.println("Impossï¿½vel depositar dinheiro com conta fechada");
 		}
 	}
 
 	public void sacar(double valor) {
 		if (getStatus() == true) {
-			if (getSaldo() > valor) {
+			if (getSaldo() >= valor) {
 				setSaldo(getSaldo() - valor); // ou saldo -= valor;
 			} else {
 				System.err.println("Saldo insuficiente para saque");
 			}
 		} else {
-			System.err.println("Impossível sacar dinheiro com conta fechada");
+			System.err.println("Impossï¿½vel sacar dinheiro com conta fechada");
 		}
 	}
 
 	public void pagarMensal() {
-		// inicialização de uma variável local:
+		// inicializaï¿½ï¿½o de uma variï¿½vel local:
 		double valor = 0;
 		if (getTipo() == "CC" || getTipo() == "cc") {
 			valor = 12;
 		} else if (getTipo() == "CP" || getTipo() == "cp") {
 			valor = 20;
 		}
-		if (getStatus() == true) { // só posso cobrar de uma conta aberta.
+		if (getStatus() == true) { // sï¿½ posso cobrar de uma conta aberta.
 			if (saldo > valor) {
-				// se o saldo for maior do que o valor que eu tenho que sacar, então:
+				// se o saldo for maior do que o valor que eu tenho que sacar, entï¿½o:
 				setSaldo(getSaldo() - valor);
 			} else {
-				System.err.println("Impossível de pagar");
+				System.err.println("Impossï¿½vel de pagar");
 			}
 
 		}
 	}
 
-	// Métodos de acesso
+	// Mï¿½todos de acesso
 	public int getNumConta() {
 		return numConta;
 	}

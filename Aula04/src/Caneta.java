@@ -5,6 +5,7 @@ public class Caneta {
 	private String cor;
 	private boolean tampada;
 	
+	//Construtor
 	public Caneta(String m, String c, float p) {
 		this.modelo = m;
 		this.cor = c;
@@ -12,6 +13,7 @@ public class Caneta {
 		this.tampar();
 	}
 	
+	//Métodos de acesso
 	public String getModelo() {
 		return modelo;
 	}
