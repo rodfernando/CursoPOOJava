@@ -5,13 +5,13 @@ public class Pessoa {
 	private String sexo;
 	
 	
-	//métodos
+	//mï¿½todos
 	public void fazerAniver() {
 		this.idade++;
 	}
 
 	
-	//métodos especiais
+	//mï¿½todos de acesso
 	public String getNome() {
 		return nome;
 	}

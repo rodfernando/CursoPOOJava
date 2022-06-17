@@ -6,9 +6,9 @@ public class Livro implements Publicacao{
 	private int totPaginas;
 	private int pagAtual;
 	private boolean aberto;
-	private Pessoa leitor; //agregação da classe Pessoa
+	private Pessoa leitor; //agregaï¿½ï¿½o da classe Pessoa
 	
-	//métodos construtores
+	//mï¿½todos construtores
 	public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
 		super();
 		this.titulo = titulo;
@@ -21,16 +21,16 @@ public class Livro implements Publicacao{
 
 
 	public String detalhes() { //foi implementado o toString (trocado pelo nome detalhes)
-		return "Livro \nTítulo = " + titulo + "\nAutor = " + autor + "\nTotal de Páginas = " + totPaginas + ", Página Atual = " + pagAtual
+		return "Livro \nTï¿½tulo = " + titulo + "\nAutor = " + autor + "\nTotal de Pï¿½ginas = " + totPaginas + ", Pï¿½gina Atual = " + pagAtual
 				+ ", Aberto = " + aberto + "\nLeitor = " + leitor.getNome() + ", Idade = " + leitor.getIdade() + 
-				", Sexo = " + leitor.getSexo(); // se deixar somente leitor, ele fica uma referência ao objeto Leitor = Pessoa@762efe5d
-	//já que ele é uma instancia de uma classe, tem que colocar leitor.getNome()
+				", Sexo = " + leitor.getSexo(); // se deixar somente leitor, ele fica uma referï¿½ncia ao objeto Leitor = Pessoa@762efe5d
+	//jï¿½ que ele ï¿½ uma instancia de uma classe, tem que colocar leitor.getNome()
 	}
 
 
 
 
-	//implementação da interface Publicacao 
+	//implementaï¿½ï¿½o da interface Publicacao 
 	@Override
 	public void abrir() {
 		this.aberto = true;
@@ -50,7 +50,7 @@ public class Livro implements Publicacao{
 		//		this.pagAtual = 0;
 		//	} else { this.pagAtual = p; }
 		if (this.getPagAtual() > this.getTotPaginas()) {
-			System.out.println("Você passou o total de páginas!");
+			System.out.println("Vocï¿½ passou o total de pï¿½ginas!");
 		}
 	}
 
@@ -60,7 +60,7 @@ public class Livro implements Publicacao{
 		this.setPagAtual(this.getPagAtual() + 1);
 		if (this.getPagAtual() > this.getTotPaginas()) {
 			this.setPagAtual(0);
-			System.out.println("Você passou o total de páginas");
+			System.out.println("Vocï¿½ passou o total de pï¿½ginas");
 		} 
 	}
 
@@ -129,7 +129,4 @@ public class Livro implements Publicacao{
 	public void setLeitor(Pessoa leitor) {
 		this.leitor = leitor;
 	}
-	
-	//métodos acessores
-	
 }

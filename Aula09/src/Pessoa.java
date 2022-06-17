@@ -5,7 +5,7 @@ public class Pessoa {
 	private int idade;
 	private String sexo;
 	
-	//método construtor
+	//mï¿½todo construtor
 	public Pessoa(String nome, int idade, String sexo) {
 		super();
 		this.nome = nome;
@@ -13,13 +13,12 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 	
-	//métodos públicos
+	//mï¿½todos pï¿½blicos
 	public void fazerAniver() {
 		this.setIdade(this.getIdade() + 1); //this.idade++ 
 	}
 
-
-	//métodos acessores
+	//mï¿½todos acessores
 	public String getNome() {
 		return nome;
 	}
@@ -43,8 +42,4 @@ public class Pessoa {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	
-	//métodos acessores
-	
-	
 }
