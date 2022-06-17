@@ -9,7 +9,7 @@ public class Program {
 		System.out.println(contaBanco1.getSaldo()); 
 		contaBanco1.depositar(500);
 		System.out.println(contaBanco1.getSaldo());
-		contaBanco1.sacar(551); 
+		contaBanco1.sacar(55); 
 		System.out.println(contaBanco1.getSaldo()); 
 	}
 
